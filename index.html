@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        *{
+            margin: 5.0;
+            padding: 0;
+        }
+body{ 
+    background-color: rgb(1, 1, 61);
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(4, 4, 42);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+main hr{
+    border: 0;
+    background:#9c97f1;
+    height: 1.2px;
+    margin: 40px 84px;
+
+}
+.left{
+    font-size: 1.2rem;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin: 100px 0;
+}
+.first div{
+    width: 25%
+}
+.rightside {
+    color:black;
+}
+.leftside{
+    align-items: left margin;
+    color:white;
+    font-size: 1.8rem;
+}
+.purple{
+    color:blueviolet;
+
+}
+#element{
+    color:blueviolet
+}
+.second{
+    max-width: 80vw;
+    margin:auto;
+    height:80vh;
+}
+.second h1{
+    font-size: 1.9rem;
+    font-style: bold;
+}
+.second .box{
+    background:white;
+           width:80vw;
+          height:2px; 
+          margin:56px 0;
+}
+.third h1{
+    font-size:1.9rem;
+    font-style: bold;
+}
+.third .box{
+    background:white;
+           width:80vw;
+          height:2px; 
+          margin:56px 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><h1><b>Anshika's Portfolio</b></h1></div>
+            <div class="right"></div>
+            <ul>
+               <li><a href="/">About me</a></li>
+               <li><a href="/">Skills</a></li>
+               <li><a href="/">Projects</a></li>
+               <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+           <div class="leftside">
+            Hello!,My Name is <span class="purple">Anshika.</span><br>
+            I am a B.Tech student at IIMT College of Engineering.<br>
+            And I am interested in Web development domain.<br>
+            <span id="element"></span>
+           </div>
+           <div class="rightside">
+            <img src= "image.png" alt="">
+           </div>
+
+        </section>
+        <hr>
+        <section class="second">
+           <h1>My Qualifications</h1> 
+           <div class="box"></div>
+           <h2><i>Done my schooling from St.John's School B.L.W.,Varanasi.(ICSE board)</h2><br>
+           <h3>My Aggregates</h3><br>
+           <ul>
+            <li>Class 10th: 83.6% (2020)</li>
+            <li>Class 12th: 76.7% (2022)</li>
+           </ul>
+           <h2>Currently pursuing B.Tech-CSE from IIMT College of Engineering,Greater Noida(2nd year) </h2>
+           <h3><ul>
+            <li>!st Year:(2023-2024)<br>
+                Semester 1: 7.59 sgpa<br>
+                Semester 2: 8.14 sgpa
+            </li>
+            <li>2nd Year:(2024-2025)<br>
+                Semester 1:Coming Soon...
+            </li>
+           </ul></h3></i>
+           </section>
+           <hr>
+           <section class="third">
+            <h1>My Skills</h1>
+            <div class="box"></div>
+            <i><h2>My Skills are:</h2>
+            <ul>
+                <li>HTML<br><img src="html.png" height="80px" width="80px" alt=""></li>
+                <li>CSS<br><img src="css.jpeg" height="80px" width="80px" alt=""></li>
+                <li>JAVASCRIPT<br><img src="js.png" height="80px" width="80px" alt=""></li>
+                <li>BOOTSTRAP<br><img src="bs.png" height="80px" width="80px" alt=""></li>
+            </ul></i>
+        
+
+           </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Web Designer','Video Editor'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
